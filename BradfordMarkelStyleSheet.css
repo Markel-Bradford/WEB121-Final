@@ -360,13 +360,21 @@ textarea {
 /*responsive styles*/
 
 @media screen and (max-width: 400px) {
-.input-textarea {
+    .input-textarea {
     width: 43%;
 }
+.navbar-container {
+    margin-left:  50px;
 }
 
-.navbar-container {
-    margin-left:  35px;
+form {
+    width: 90%;
+    padding: 10px;
+}
+textarea, .email {
+    width: 95%;
+}
+
 }
 
 @media screen and (max-width: 600px) {
