@@ -361,7 +361,7 @@ textarea {
 
 @media screen and (max-width: 400px) {
     .input-textarea {
-    width: 43%;
+    width: 45%;
 }
 .navbar-container {
     margin-left:  50px;
@@ -372,7 +372,7 @@ form {
     padding: 10px;
 }
 textarea, .email {
-    width: 95%;
+    width: 98%;
 }
 
 }
