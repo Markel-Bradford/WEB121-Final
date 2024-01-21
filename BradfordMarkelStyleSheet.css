@@ -297,6 +297,7 @@ select {
 textarea,
 .email,
 select {
+    padding:2.5px 0 2.5px 10px;
     font-family: "Oswald";
 }
 
@@ -358,21 +359,23 @@ textarea {
 
 
 
-@media only screen and (max-width: 390px) and (height: 844px) {
+@media only screen and (min-width: 390px) {
 
 .navbar-container {
     margin-left:  30px;
 }
 
-.input-textarea,
 textarea, .email {
-    width: 85%;
-    margin-right: 20px;
+    width: 98%;
 }
 
-
 }
 
+.form-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 @media screen and (max-width: 600px) {
     form {
@@ -383,18 +386,7 @@ textarea, .email {
     .form-info {
         margin: 0 10px;
     }
-
-    .navbar-container {
-        margin-left:  30px;
-    }
-    
-    textarea, .email {
-        width: 98%;
-    }
-    
 }
-
-
 
 @media screen and (max-width:1080px) {
     /*navbar*/
