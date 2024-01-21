@@ -358,23 +358,21 @@ textarea {
 
 
 
-@media only screen and (min-width: 390px) {
+@media only screen and (max-width: 390px) {
 
 .navbar-container {
     margin-left:  30px;
 }
 
+.input-textarea,
 textarea, .email {
-    width: 98%;
+    width: 90%;
+    margin-right: 10px;
 }
+
 
 }
 
-.form-label {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
 @media screen and (max-width: 600px) {
     form {
@@ -385,7 +383,18 @@ textarea, .email {
     .form-info {
         margin: 0 10px;
     }
+
+    .navbar-container {
+        margin-left:  30px;
+    }
+    
+    textarea, .email {
+        width: 98%;
+    }
+    
 }
+
+
 
 @media screen and (max-width:1080px) {
     /*navbar*/
