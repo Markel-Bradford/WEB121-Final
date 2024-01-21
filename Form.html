@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A survey to ask if the information provided on the site was helpful." >
+    <meta
+      name="keywords"
+      content="Front-end, Front end, Front-end developer, developer, development, web development, web, front end developer, form, survey, career path" >
+    <meta name="author" content="Markel Bradford" >
+    <link rel="stylesheet" href="../BradfordMarkelStyleSheet.css" >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide">
+      <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Oswald">
+    <title>Front-end Web Developer: Form</title>
+  </head>
+  <body>
+    <div id="background">
+    <header id="header">
+        <nav class="navbar">
+          <div class="navbar-container">
+            <a class="logo" href="../index.html"
+              >Front-end Web Developer</a
+            >
+              <ul class="nav-menu">
+                <li class="nav-items">
+                  <a class="nav-links" href="../index.html">Home</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-links" href="./Table.html">Summary</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-links" href="./Form.html">Form</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+      </header>
+      <h1 class="title">Form</h1>
+      <h2 class="form-info">Please take a moment to complete this brief survey about this website. Thank you!</h2>
+      <form>
+        <div class="form-label">
+          <label for="first-name">First Name</label>
+        </div>
+        <div class="form-group">
+          <input
+          id="first-name"
+          name="first-name"
+          type="text"
+          autocomplete="additional-name"
+          class="input-textarea"
+          placeholder="First name..."
+          required>
+        </div>
+        <div class="form-label">
+        <label for="last-name" id="lastname">Last Name</label>
+        </div>
+        <div class="form-group">
+          <input
+            id="last-name"
+            name="last-name"
+            type="text"
+            autocomplete="additional-name"
+            class="input-textarea"
+            placeholder="Last name..."
+            required>
+        </div>
+        <div class="form-label">
+        <label for="email">Email</label>
+        </div>
+        <div class="form-group">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            class="email"
+            placeholder="Email..."
+            required>
+        </div>
+        <div class="form-group">
+          <p class="form-descriptions">Did you find the information provided useful and informative?</p>
+          <select id="dropdown" name="informative" required>
+            <option disabled selected value>Please choose an answer...</option>
+            <option value="yes">Yes, this was very useful and informative</option>
+            <option value="no">No, I think this could have been more informative</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p class="form-descriptions">Would you like to opt-in to any of the following:</p>
+          <label class="label-checkbox" for="tips">
+          <input type="checkbox" name="tips" id="tips" class="input-checkbox">
+          Weekly Tip for Aspiring Front-end Web Developers
+          </label>
+          <label class="label-checkbox" for="changes">
+          <input type="checkbox" name="changes" id="changes" class="input-checkbox">
+          Changes and Updates to Front-end Resources
+          </label>
+          <label class="label-checkbox" for="opportunities">
+          <input type="checkbox" name="opportunities" id="opportunities" class="input-checkbox">
+          Weekly Opportunities in the Front-end Market
+          </label>
+        </div>
+        <div class="form-group">
+          <p class="form-descriptions">Do you agree to receive the communincations selected above via email?</p>
+          <label class="label-radio" for="agree">
+          <input type="radio" name="choice" id="agree" class="radio-input">
+          Yes, I agree
+          </label>
+          <label class="label-radio" for="disagree">
+          <input type="radio" name="choice" id="disagree" class="radio-input">
+          No, I disagree
+          </label>
+        </div>
+        <div class="form-group">
+          <p class="form-descriptions">Are there any improvements that you would recommend for the website?</p>
+          <textarea name="feedback" id="feedback" cols="30" rows="6" placeholder="Optional"></textarea>
+        </div>
+        <div class="form-button-container">
+          <button class="submit-button" id="submit" type="submit" value="Submit">Submit</button>
+          <button class="reset-button" id="reset" type="reset" value="Reset">Reset</button>
+        </div>
+      </form>
+      <div class="scroll-button-container">
+        <button type="button" id="scroll-button" onclick="scrollToTop()" title="Back to top" >Back to Top</button>
+        <script>
+            function scrollToTop() {
+                document.getElementById('background').scrollTo({top:0, behavior: 'smooth'});
+            }
+        </script>
+        </div>
+      </div>
+  </body>
+</html>
