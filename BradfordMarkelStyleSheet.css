@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
     height: 100%;
     overflow-y: auto;
-    overflow-x: hidden;
 }
 
 /*body style*/
@@ -12,6 +11,7 @@ body {
     padding: 0;
     font-family: 'Oswald';
     color: #fff;
+    overflow-y: auto;
 }
 
 #background {
@@ -19,6 +19,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: fixed;
     height: 100%;
     width: 100%;
     overflow-y: auto;
