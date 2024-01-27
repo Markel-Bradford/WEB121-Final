@@ -21,7 +21,6 @@ body {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    position: fixed;
     overflow-y: auto;
     overflow-x: hidden;
 }
