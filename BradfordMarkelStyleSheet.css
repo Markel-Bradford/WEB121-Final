@@ -365,6 +365,10 @@ textarea {
     width: 96.5%;
 }
 
+.info {
+    font-size: 22px;
+}
+
 }
 
 .form-label {
@@ -424,12 +428,12 @@ textarea {
     }
 
     .info , .form-info{
-        font-size: 28px;
+        font-size: 22px;
         padding-bottom: 10px;
     }
 
     .skills {
-        font-size: 24px;
+        font-size: 20px;
         margin: 0 0 20px 0;
     }
 
